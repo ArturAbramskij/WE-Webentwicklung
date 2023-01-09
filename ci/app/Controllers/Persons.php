@@ -2,25 +2,16 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\Controller;
+use App\Models\MitgliederModel;
+
 class Persons extends BaseController
 {
     public function index()
     {
+        $mitgliederModel = new MitgliederModel();
 
-        $data['mitglieder'] = array(
-            array(
-                'id' => '0',
-                'name' => 'Max Mustermann',
-                'email' => 'mustermann@muster.de',
-                'inProjekt' => false
-            ),
-            array(
-                'id' => '1',
-                'name' => 'Petra Müller',
-                'email' => 'petra@mueller.de',
-                'inProjekt' => true
-            )
-        );
+        $data['mitglieder'] = $mitgliederModel->getData();
 
         return view('persons_site', $data);
     }

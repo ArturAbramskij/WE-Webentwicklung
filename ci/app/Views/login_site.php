@@ -11,16 +11,17 @@
     <?php $header = "Aufgabenplaner: Login";
     require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\header.php")?>
     <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
-            <form>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <!-- form_open funktioniert nicht. Ich habe es über die helper Variable autoloaded und das klappt auch, aber es routet falsch. <//?php echo form_open("login")?>-->
+            <form class="mt-4" action="<?php echo base_url() ?>/loginSession" method="post">
                 <div class="form-group my">
                     <label for="loginEmail">Email-Adresse:</label>
-                    <input id="loginEmail" type="text" class="form-control" placeholder="Email-Adresse eingeben">
+                    <input id="loginEmail" name="loginEmail" type="text" class="form-control" placeholder="Email-Adresse eingeben">
                 </div>
                 <div class="form-group my-2">
                     <label for="loginPwd">Passwort:</label>
-                    <input id="loginPwd" type="password" class="form-control" placeholder="Passwort">
+                    <input id="loginPwd" name="loginPassword" type="password" class="form-control" placeholder="Passwort">
                 </div>
                 <div class="form-group form-check my-2">
                     <input id="agbCheck" type="checkbox" class="form-check-input">
@@ -35,7 +36,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-2"></div>
+        <div class="col-3"></div>
     </div>
 </div>
 </body>

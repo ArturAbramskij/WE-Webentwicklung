@@ -29,7 +29,7 @@
                     <tbody>
                     <?php if (isset($mitglieder)): foreach ($mitglieder as $item): ?>
                         <tr>
-                            <td><?= isset($item['name']) ? $item['name'] : '' ?></td>
+                            <td><?= isset($item['username']) ? $item['username'] : '' ?></td>
                             <td><?= isset($item['email']) ? $item['email'] : '' ?></td>
                             <td><?php isset($item['inProjekt']) && $item['inProjekt'] ? $item['state'] = 'checked' : $item['state'] = ''; ?><?= isset($item['inProjekt']) ? '<input class="form-check-input" type="checkbox"'.$item['state'].'>' : '<input class="form-check-input" type="checkbox"'.$item['state'].'>' ?></td>
                             <td class="text-right">

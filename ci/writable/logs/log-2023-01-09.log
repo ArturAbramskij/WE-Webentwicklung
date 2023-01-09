@@ -1,0 +1,27 @@
+CRITICAL - 2023-01-09 01:32:36 --> Undefined property: App\Controllers\Login::$session
+in APPPATH\Controllers\Login.php on line 21.
+ 1 APPPATH\Controllers\Login.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'APPPATH\\Controllers\\Login.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:34:24 --> Undefined property: App\Controllers\Login::$session
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'APPPATH\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:36:25 --> Undefined property: App\Controllers\Login::$session
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'APPPATH\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 10:25:03 --> Call to undefined function App\Controllers\getID()
+in APPPATH\Controllers\Login.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
