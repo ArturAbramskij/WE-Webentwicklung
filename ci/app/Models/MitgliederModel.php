@@ -25,4 +25,37 @@ class MitgliederModel extends Model
 
         return $result->getRowArray();
     }
+
+    function add_user($username, $email, $password) {
+        $personen = $this->db->table('mitglieder');
+        $personen->insert(array(
+            'username' => $username,
+            'email' => $email,
+            'password' => $password,
+        ));
+    }
+
+    function delete_user($delete_id) {
+        $personen = $this->db->table('mitglieder');
+        $personen = $personen->select('*');
+        $person = $personen->where('id', $delete_id);
+        $person->delete();
+    }
+
+    function get_user($id) {
+        $personen = $this->db->table('mitglieder');
+        $personen = $personen->select('*');
+
+        if ($id != NULL) {
+            $personen = $personen->where('id', $id);
+        }
+        $result = $personen->get();
+
+        if ($id != NULL) {
+            return $result->getRowArray();
+        }
+        else {
+            return $result->getResultArray();
+        }
+    }
 }

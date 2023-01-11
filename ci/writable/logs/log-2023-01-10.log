@@ -1,0 +1,132 @@
+ERROR - 2023-01-10 18:53:31 --> Error connecting to the database: mysqli_sql_exception: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'todoliste', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#4 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#3 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#5 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 18:53:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `password`
+FROM `mitglieder`
+WHERE `mitglieder`.`email` = :mitglieder.email:', [...], false)
+ 3 APPPATH\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 18:54:02 --> Error connecting to the database: mysqli_sql_exception: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'todoliste', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#4 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#3 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#5 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 18:54:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `password`
+FROM `mitglieder`
+WHERE `mitglieder`.`email` = :mitglieder.email:', [...], false)
+ 3 APPPATH\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 18:58:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11308 in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 171)
+#1 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'todoliste', 3306, '', 0)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#5 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'todoliste', 3306, '', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#4 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#3 C:\xampp\htdocs\ci\app\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci\app\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+#5 C:\xampp\htdocs\ci\system\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 18:58:44 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `password`
+FROM `mitglieder`
+WHERE `mitglieder`.`email` = :mitglieder.email:', [...], false)
+ 3 APPPATH\Models\MitgliederModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

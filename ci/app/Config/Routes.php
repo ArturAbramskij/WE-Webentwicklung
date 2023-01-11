@@ -42,6 +42,8 @@ $routes->get("/projects", "Projects::index");
 $routes->get("/reiter", "Reiter::index");
 $routes->get("/tasks", "Tasks::index");
 $routes->get("/todo", "Todo::index");
+$routes->post("/create_user", "Persons::create_user");
+$routes->post("/edit_user", "Persons::edit_user");
 
 /*
  * --------------------------------------------------------------------
