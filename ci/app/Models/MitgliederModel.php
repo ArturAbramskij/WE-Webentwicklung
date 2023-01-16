@@ -3,6 +3,8 @@ use CodeIgniter\Model;
 
 class MitgliederModel extends Model
 {
+    public \CodeIgniter\Database\BaseBuilder $personen;
+
     public function getData(){
         $result = $this->db->query('SELECT * FROM mitglieder order by username');
         return $result->getResultArray();
@@ -26,12 +28,35 @@ class MitgliederModel extends Model
         return $result->getRowArray();
     }
 
-    function add_user($username, $email, $password) {
+    function add_user($username, $email, $password, $check) {
         $personen = $this->db->table('mitglieder');
+        if (isset($_POST["persCheck"])){
+            $check = 1;
+        }else{
+            $check = 0;
+        }
         $personen->insert(array(
             'username' => $username,
             'email' => $email,
             'password' => $password,
+            'inProjekt' => $check
+        ));
+    }
+
+    function update_user($id){
+        $this->personen = $this->db->table("mitglieder");
+        $this->personen->select("*");
+        $person = $this->personen->where("id", $id);
+        if (isset($_POST["persCheck"])){
+            $check = 1;
+        }else{
+            $check = 0;
+        }
+        $person->update(array(
+            'username' => $_POST["persName"],
+            'email' => $_POST["persEmail"],
+            'password' => $_POST["persPassword"],
+            'inProjekt' => $check,
         ));
     }
 

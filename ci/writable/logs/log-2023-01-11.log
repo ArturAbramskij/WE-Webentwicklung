@@ -1,0 +1,115 @@
+CRITICAL - 2023-01-11 04:21:07 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 45.
+ 1 APPPATH\Controllers\BaseController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:37:53 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 50.
+ 1 APPPATH\Controllers\BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:39:02 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 50.
+ 1 APPPATH\Controllers\BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:42:19 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 50.
+ 1 APPPATH\Controllers\BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:42:21 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 50.
+ 1 APPPATH\Controllers\BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:42:22 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+in APPPATH\Controllers\BaseController.php on line 50.
+ 1 APPPATH\Controllers\BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$session is deprecated', 'APPPATH\\Controllers\\BaseController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:43:15 --> Undefined property: App\Controllers\Login::$session
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'APPPATH\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 04:44:17 --> Creation of dynamic property CodeIgniter\Autoloader\Autoloader::$session is deprecated
+in APPPATH\Controllers\Login.php on line 6.
+ 1 APPPATH\Controllers\Login.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property CodeIgniter\\Autoloader\\Autoloader::$session is deprecated', 'APPPATH\\Controllers\\Login.php', 6)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(283): include_once('APPPATH\\Controllers\\Login.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Login.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 6 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Login', true)
+ 7 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:35:49 --> Undefined property: App\Controllers\Login::$session
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$session', 'APPPATH\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:37:25 --> Creation of dynamic property App\Models\MitgliederModel::$personen is deprecated
+in APPPATH\Models\MitgliederModel.php on line 12.
+ 1 APPPATH\Models\MitgliederModel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Models\\MitgliederModel::$personen is deprecated', 'APPPATH\\Models\\MitgliederModel.php', 12)
+ 2 APPPATH\Controllers\Login.php(16): App\Models\MitgliederModel->login()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:43:38 --> Undefined constant "p_hashed"
+in APPPATH\Views\login_site.php on line 15.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login_site', [], true)
+ 4 APPPATH\Controllers\Login.php(29): view('login_site')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:49:51 --> Invalid file: mitglieder.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mitglieder.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mitglieder', [], true)
+ 3 APPPATH\Controllers\Persons.php(52): view('mitglieder', [...])
+ 4 APPPATH\Controllers\Persons.php(34): App\Controllers\Persons->delete_user('4')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Persons->edit_user()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Persons))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:50:53 --> Invalid file: persons.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('persons.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('persons', [], true)
+ 3 APPPATH\Controllers\Persons.php(52): view('persons', [...])
+ 4 APPPATH\Controllers\Persons.php(34): App\Controllers\Persons->delete_user('5')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Persons->edit_user()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Persons))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 14:51:51 --> Invalid file: Persons.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Persons.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Persons', [], true)
+ 3 APPPATH\Controllers\Persons.php(52): view('Persons', [...])
+ 4 APPPATH\Controllers\Persons.php(34): App\Controllers\Persons->delete_user('2')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Persons->edit_user()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Persons))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

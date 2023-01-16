@@ -36,18 +36,18 @@ abstract class BaseController extends Controller
      * @var array
      */
     protected $helpers = ["form"];
+    public \CodeIgniter\Session\Session $session;
 
     /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
-        $this->session = \Config\Services::session();
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        $this->session = \Config\Services::session();
     }
 }

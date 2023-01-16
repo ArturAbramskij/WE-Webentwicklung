@@ -19,38 +19,33 @@ class Persons extends BaseController
     public function create_user() {
         $mitglieder = new MitgliederModel();
         if (isset($_POST['persName']) && isset($_POST['persEmail']) && isset($_POST['persPassword'])) {
-            $mitglieder->add_user($_POST['persName'], $_POST['persEmail'], $_POST['persPassword']);
+            $mitglieder->add_user($_POST['persName'], $_POST['persEmail'], $_POST['persPassword'], $_POST["persCheck"]);
             return redirect()->to(base_url() . '/persons');
         }
     }
 
     public function edit_user() {
+        $mitglieder = new MitgliederModel();
         if (isset( $_POST['edit_btn'])) {
-            $id = $_POST['edit_btn'];
-            $this->show_user_properties($id);
+            $user = $mitglieder->get_user($_POST['edit_btn']);
+            $data["user"] = $user;
+            return view("edit_site", $data);
         }
         if (isset($_POST['delete_btn'])) {
             $id = $_POST['delete_btn'];
             $this->delete_user($id);
+            return redirect()->to(base_url() . "/persons");
         }
     }
 
-    public function show_user_properties($user_id) {
+    public function update_user(){
         $mitglieder = new MitgliederModel();
-        $id = $mitglieder->get_user($user_id);
-        $data['user'] = $id;
-
-        echo ("222");
-        die();
+        $mitglieder->update_user($_POST["persID"]);
+        return redirect()->to(base_url() . "/persons");
     }
 
     public function delete_user($id) {
         $mitglieder = new MitgliederModel();
         $mitglieder->delete_user($id);
-
-        $data['persons'] = $mitglieder->getData();
-        return view('mitglieder', $data);
-
     }
-
 }

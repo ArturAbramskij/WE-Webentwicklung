@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 03. Jan 2023 um 13:09
--- Server-Version: 10.4.25-MariaDB
--- PHP-Version: 8.1.10
+-- Erstellungszeit: 16. Jan 2023 um 17:30
+-- Server-Version: 10.4.27-MariaDB
+-- PHP-Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,7 +35,7 @@ CREATE TABLE `aufgaben` (
   `faelldat` datetime NOT NULL,
   `erstelltvon` tinyint(4) NOT NULL,
   `zureiter` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Daten für Tabelle `aufgaben`
@@ -45,7 +45,6 @@ INSERT INTO `aufgaben` (`id`, `name`, `beschreibung`, `erstelldat`, `faelldat`, 
 (3, 'HTML Datei erstellen', 'HTML Datei erstellen', '2022-12-11 16:09:23', '2022-12-11 16:09:23', 3, 1),
 (4, 'CSS Datei erstellen', 'CSS Datei erstellen', '2022-12-11 16:10:46', '2022-12-11 16:10:46', 3, 1),
 (5, 'PC eingeschaltet', 'PC eingeschaltet', '2022-12-11 16:10:46', '2022-12-11 16:10:46', 3, 2),
-(6, 'Kaffee trinken', 'Kaffee trinken', '2022-12-11 16:10:46', '2022-12-11 16:10:46', 2, 2),
 (7, 'Für die Uni lernen', 'Für die Uni lernen', '2022-12-11 16:11:38', '2022-12-11 16:11:38', 3, 3);
 
 -- --------------------------------------------------------
@@ -58,16 +57,17 @@ CREATE TABLE `mitglieder` (
   `id` tinyint(4) NOT NULL,
   `username` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `inProjekt` int(1) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Daten für Tabelle `mitglieder`
 --
 
-INSERT INTO `mitglieder` (`id`, `username`, `email`, `password`) VALUES
-(2, 'Petra Müller', 'petra@mueller.de', '123'),
-(3, 'Max Mustermann', 'mustermann@muster.de', '123');
+INSERT INTO `mitglieder` (`id`, `username`, `email`, `inProjekt`, `password`) VALUES
+(3, 'Max Mustermann', 'mustermann@muster.de', 1, '$2y$10$Vv75LWh1xDGl5EcdNzj3XO/2kW.y9mhSlUW0JR8mU20t6MNv.yS1u'),
+(13, 'artur', 'artur@artur.de', 0, '123');
 
 -- --------------------------------------------------------
 
@@ -80,7 +80,7 @@ CREATE TABLE `projekte` (
   `name` varchar(10) NOT NULL,
   `beschreibung` varchar(200) NOT NULL,
   `erstelltvon` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE `projekte` (
 CREATE TABLE `projekte_aufgaben` (
   `id_projekte` tinyint(4) NOT NULL,
   `id_aufgaben` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -102,7 +102,7 @@ CREATE TABLE `projekte_aufgaben` (
 CREATE TABLE `projekte_mitglieder` (
   `id_projekte` tinyint(4) NOT NULL,
   `id_mitglieder` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -114,7 +114,7 @@ CREATE TABLE `reiter` (
   `id` tinyint(4) NOT NULL,
   `name` varchar(20) NOT NULL,
   `beschreibung` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Daten für Tabelle `reiter`
@@ -182,7 +182,7 @@ ALTER TABLE `aufgaben`
 -- AUTO_INCREMENT für Tabelle `mitglieder`
 --
 ALTER TABLE `mitglieder`
-  MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT für Tabelle `projekte`

@@ -1,0 +1,17 @@
+CRITICAL - 2023-01-16 10:14:05 --> Invalid file: edit_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('edit_view', [], true)
+ 3 APPPATH\Controllers\Persons.php(32): view('edit_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Persons->edit_user()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Persons))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 10:15:37 --> Undefined array key "username"
+in APPPATH\Models\MitgliederModel.php on line 45.
+ 1 APPPATH\Models\MitgliederModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Models\\MitgliederModel.php', 45)
+ 2 APPPATH\Controllers\Persons.php(42): App\Models\MitgliederModel->update_user('10')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Persons->update_user()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Persons))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
