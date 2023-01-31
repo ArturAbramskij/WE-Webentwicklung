@@ -45,6 +45,7 @@ $routes->get("/todo", "Todo::index");
 $routes->post("/create_user", "Persons::create_user");
 $routes->post("/edit_user", "Persons::edit_user");
 $routes->post("/update_user", "Persons::update_user");
+$routes->get("/logout", "Login::logout");
 
 
 /*

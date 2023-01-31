@@ -5,6 +5,7 @@ use App\Models\MitgliederModel;
 
 class Login extends BaseController
 {
+
     public function index(){
         $this->session->set("loggedin", FALSE);
         return view("login_site");
@@ -12,20 +13,28 @@ class Login extends BaseController
 
     public function loginSession(){
         $mitgliederModel = new MitgliederModel();
-        if (isset($_POST["loginEmail"]) && isset($_POST["loginPassword"])){
-            if ($mitgliederModel->login() != NULL){
+        //if ($this->validation->run($_POST, "login")) {
+            if (isset($_POST["loginEmail"]) && isset($_POST["loginPassword"])) {
+                if ($mitgliederModel->login() != NULL) {
 
-                $password = $mitgliederModel->login()['password'];
+                    $password = $mitgliederModel->login()['password'];
 
-                if(password_verify($_POST["loginPassword"], $password)){
-                    $this->session->set("loggedin", TRUE);
-                    $this->session->set("username", $_POST["loginEmail"]);
-                    $this->session->set("id", $mitgliederModel->getID());
-                    return redirect()->to(base_url() . "/persons");
+                    if (password_verify($_POST["loginPassword"], $password)) {
+                        $this->session->set("loggedin", TRUE);
+                        $this->session->set("username", $_POST["loginEmail"]);
+                        $this->session->set("id", $mitgliederModel->getID());
+                        return redirect()->to(base_url() . "/persons");
+                    }
                 }
             }
-        }
-        $this->session->set('loggedin', FALSE);
-        return view('login_site');
+        /*} else {
+            $data["error"] = $this->validation->getErrors();
+            echo view("login_site", $data);
+        }*/
+    }
+
+    public function logout() {
+        $this->session->destroy();
+        return redirect()->to(base_url() . "/");
     }
 }

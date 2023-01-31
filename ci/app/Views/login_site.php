@@ -17,15 +17,18 @@
             <form class="mt-4" action="<?php echo base_url() ?>/loginSession" method="post">
                 <div class="form-group my">
                     <label for="loginEmail">Email-Adresse:</label>
-                    <input id="loginEmail" name="loginEmail" type="text" class="form-control" placeholder="Email-Adresse eingeben">
+                    <input id="loginEmail" name="loginEmail" type="text" class="form-control" placeholder="Email-Adresse eingeben"> <?//php if(isset($error["email"])){echo "is-invalid";} ?>
+                    <!--p><div class="invalid-feedback"> <?//= (isset($error["email"]))? $error["email"]:"" ?> </div></p-->
                 </div>
                 <div class="form-group my-2">
                     <label for="loginPwd">Passwort:</label>
-                    <input id="loginPwd" name="loginPassword" type="password" class="form-control" placeholder="Passwort">
+                    <input id="loginPwd" name="loginPassword" type="password" class="form-control" placeholder="Passwort"><?//php if(isset($error["password"])){echo "is-invalid";} ?>
+                    <!--p><div class="invalid-feedback"> <?//= (isset($error["password"]))? $error["password"]:"" ?> </div> </p-->
                 </div>
                 <div class="form-group form-check my-2">
-                    <input id="agbCheck" type="checkbox" class="form-check-input">
+                    <input id="agbCheck" type="checkbox" class="form-check-input"> <?//php if(isset($error["agb"])){echo "is-invalid";} ?>
                     <label for="agbCheck" class="form-check-label">AGBs und Datenschutzbedingungen akzeptieren</label>
+                    <!--p><div class="invalid-feedback"> <?//= (isset($error["agb"]))? $error["agb"]:"" ?> </div><p-->
                 </div>
                 <button type="submit" class="btn btn-primary my-2">Einloggen</button>
                 <div class="form-group">

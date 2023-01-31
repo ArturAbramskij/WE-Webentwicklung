@@ -54,7 +54,7 @@
     <?php $header = "Aufgabenplaner: Aufgaben";
     require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\header.php")?>
     <div class="row">
-        <?php require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\menubar.php")?>
+        <?php require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\navbar.php")?>
         <div class="col-8">
             <form class="form-group">
                 <table class="table table-hover">

@@ -1,0 +1,81 @@
+CRITICAL - 2023-01-31 08:28:34 --> Undefined property: App\Controllers\Login::$validation
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$validation', 'APPPATH\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:30:18 --> Call to a member function run() on null
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:31:11 --> Undefined property: App\Controllers\Login::$validation
+in APPPATH\Controllers\Login.php on line 16.
+ 1 APPPATH\Controllers\Login.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$validation', 'APPPATH\\Controllers\\Login.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:31:51 --> login is not a validation rules group.
+in SYSTEMPATH\Validation\Validation.php on line 607.
+ 1 SYSTEMPATH\Validation\Validation.php(607): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('login')
+ 2 SYSTEMPATH\Validation\Validation.php(123): CodeIgniter\Validation\Validation->loadRuleGroup('login')
+ 3 APPPATH\Controllers\Login.php(16): CodeIgniter\Validation\Validation->run([...], 'login')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:32:10 --> login is not a validation rules group.
+in SYSTEMPATH\Validation\Validation.php on line 607.
+ 1 SYSTEMPATH\Validation\Validation.php(607): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('login')
+ 2 SYSTEMPATH\Validation\Validation.php(123): CodeIgniter\Validation\Validation->loadRuleGroup('login')
+ 3 APPPATH\Controllers\Login.php(16): CodeIgniter\Validation\Validation->run([...], 'login')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:32:50 --> login_site is not a validation rules group.
+in SYSTEMPATH\Validation\Validation.php on line 607.
+ 1 SYSTEMPATH\Validation\Validation.php(607): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('login_site')
+ 2 SYSTEMPATH\Validation\Validation.php(123): CodeIgniter\Validation\Validation->loadRuleGroup('login_site')
+ 3 APPPATH\Controllers\Login.php(16): CodeIgniter\Validation\Validation->run([...], 'login_site')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:33:47 --> Creation of dynamic property App\Controllers\Login::$validation is deprecated
+in APPPATH\Controllers\BaseController.php on line 52.
+ 1 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Login::$validation is deprecated', 'APPPATH\\Controllers\\BaseController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(888): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 08:36:04 --> Invalid file: login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Login.php(34): view('login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 09:19:16 --> syntax error, unexpected token ";"
+in APPPATH\Views\login_site.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login_site', [], true)
+ 3 APPPATH\Controllers\Login.php(32): view('login_site', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->loginSession()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 09:19:19 --> syntax error, unexpected token ";"
+in APPPATH\Views\login_site.php on line 21.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('login_site', [], true)
+ 3 APPPATH\Controllers\Login.php(11): view('login_site')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -11,7 +11,7 @@
     <?php $header = "Aufgabenplaner: ToDos (aktuelles Projekt)";
     require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\header.php")?>
     <div class="row">
-        <?php require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\menubar.php")?>
+        <?php require("C:\\xampp\\htdocs\\ci\\app\\Views\\templates\\navbar.php")?>
         <div class="col-10">
             <div class="row">
                 <div class="col">
